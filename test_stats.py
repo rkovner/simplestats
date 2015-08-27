@@ -1,20 +1,20 @@
 from stats import mean, std
 from nose.tools import assert_equal
 
-def test_mean():
-    assert_equal(mean([2,4]), 3)
+#def test_mean():
+#    assert_equal(mean([2,4]), 3)
 #test_mean()
 
-def test_float_mean():
-    assert_equal(mean([1,2]),1.5)
+#def test_float_mean():
+#    assert_equal(mean([1,2]),1.5)
 #test_float_mean()
 
-def test_negative_mean():
-    assert_equal(mean([-4, -2]),-3)
+#def test_negative_mean():
+#    assert_equal(mean([-4, -2]),-3)
 #test_negative_mean()
 
-def test_float_mean():
-    assert_equal(mean([3, 6]), 4.5)
+#def test_float_mean():
+#    assert_equal(mean([3, 6]), 4.5)
 #test_negative_mean()
 
 def test_std1():
@@ -32,6 +32,15 @@ def test_std3():
     exp = 2.0
     assert_equal(obs, exp)
 
+def test_std4():
+    obs = std([1.0,3.0])
+    exp = 1.0
+    assert_equal(obs, exp)
+
+def test_std5():
+    obs = std([1.0,1.0,1.0])
+    exp = 0.0
+    assert_equal(obs, exp)
 
 
 
